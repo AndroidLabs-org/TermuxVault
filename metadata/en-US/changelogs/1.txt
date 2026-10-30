@@ -1,0 +1,4 @@
+First public release.
+* Encrypted vault for Termux commands (AES-256-GCM, Argon2id), with optional Class 3 biometric unlock.
+* Run a command with one tap after you unlock; Termux receives it through an authenticated one-time handoff.
+* Completion notifications, widget and Tasker support, encrypted backup and restore.

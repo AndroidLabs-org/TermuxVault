@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in Termux Vault does not work as described
+labels: [bug]
+body:
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Shown at the bottom of Settings in Termux Vault, or in the APK file name (for example 1.0.0)
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version and device
+      placeholder: Android 14, Pixel 6
+    validations:
+      required: true
+  - type: input
+    id: termux
+    attributes:
+      label: Termux version and where you installed it from
+      placeholder: 0.118.3, F-Droid
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: Steps to reproduce, the message Termux Vault showed, and what Termux did.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Please do not paste your vault passphrase, your commands or a backup string. For anything
+        security-related, do not open a public issue: see SECURITY.md. A feature request or a
+        question is welcome too, just say so in the first line.

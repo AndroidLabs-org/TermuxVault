@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Termux Vault</string>
+    <string name="widget_description">Run a protected Termux command</string>
+    <string name="pause_after_run">Pause and wait for Enter after success</string>
+    <string name="notify_when_finished">Notify when finished</string>
+    <string name="hide_terminal_output">Hide terminal output</string>
+</resources>

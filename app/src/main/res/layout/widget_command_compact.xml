@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UselessParent">
+
+    <FrameLayout
+        android:id="@android:id/background"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/widget_background_square">
+
+        <TextView
+            android:id="@+id/widget_icon"
+            android:layout_width="18dp"
+            android:layout_height="14dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:includeFontPadding="false"
+            android:textColor="@color/vault_accent"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:paddingTop="9dp"
+            android:textColor="@color/vault_text"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</FrameLayout>

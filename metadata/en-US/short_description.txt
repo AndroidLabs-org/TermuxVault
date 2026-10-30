@@ -1,0 +1,1 @@
+Keep sensitive Termux commands encrypted and run them with one tap after unlock.

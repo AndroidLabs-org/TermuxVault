@@ -1,0 +1,24 @@
+# Local release signing credentials (copy from .env.example)
+/.env
+
+# Gradle / Android build
+.gradle/
+build/
+**/build/
+local.properties
+captures/
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Signing material
+*.jks
+*.keystore
+*.p12
+
+# IDE
+.idea/
+*.iml
+.DS_Store
