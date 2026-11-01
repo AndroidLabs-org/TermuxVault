@@ -35,6 +35,13 @@ android {
         resValues = true
     }
 
+    // AGP otherwise adds an encrypted "Dependency metadata" block to the APK signing block.
+    // F-Droid's scanner rejects it, and it carries nothing the app needs.
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
